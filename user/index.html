@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Donat Mini</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="navbar">
+      <div class="title">
+        <img src="../img/dnt.png" alt="logo" width="55" height="55">
+        <a href="#">Donat Mini</a>
+      </div>
+      <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-user-circle"></i>Dewi
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <a href="#"></a>
+        </button>
+        <div class="dropdown-content">
+          <a href="keluar.html">Keluar </a>
+        </div>
+      </div>
+      <div class="pesan">
+          <a href="pemesanan.html">Pemesanan</a>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Daftar Harga 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Hbiasa.html">Donat Biasa</a>
+          <a href="Hkarakter.html">Donat Karakter</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Jenis-Jenis Donat 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" style="width: 175px;">
+            <a href="Dbiasa.html">Donat Biasa</a>
+            <a href="Dkarakter.html">Donat Karakter</a>
+          </div>
+        </div>
+        <a href="index.html" class="active">Beranda</a>
+       
+    </div>
+
+    <div class="card" style="height: 500px;">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="../img/coklat.jpg" style="width:100%">
+          <div class="text">Coklat</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="../img/gula.jpg" style="width:100%">
+          <div class="text">Gula</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="../img/heloo.jpg" style="width:100%">
+          <div class="text">Hello Kitty</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="../img/misis.jpg" style="width:100%;" >
+          <div class="text">Misis</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="../img/kacangg.JPG" style="width:100%">
+          <div class="text">Kacang</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    </div>
+
+    <table id="t01">
+        <tr>
+          <th>Nama Donat</th>
+          <th>Stok</th> 
+          <th>Jenis</th>
+        </tr>
+        <tr>
+          <td>Donat Coklat</td>
+          <td>100</td>
+          <td>Donat Biasa</td>
+        </tr><tr>
+          <td>Donat Keju</td>
+          <td>100</td>
+          <td>Donat Biasa</td>
+        </tr>
+        <tr>
+          <td>Donat Strawberry</td>
+          <td>100</td>
+          <td>Donat Biasa</td>
+        </tr><tr>
+          <td>Donat kacang</td>
+          <td>100</td>
+          <td>Donat Biasa</td>
+        </tr><tr>
+          <td>Donat Gula</td>
+          <td>100</td>
+          <td>Donat Biasa</td>
+        </tr><tr>
+          <td>Donat Misis</td>
+          <td>100</td>
+          <td>Donat Biasa</td>
+        </tr><tr>
+          <td>Donat Baymax</td>
+          <td>100</td>
+          <td>Donat Karakter</td>
+        </tr><tr>
+          <td>Donat Minion</td>
+          <td>100</td>
+          <td>Donat Karakter</td>
+        </tr><tr>
+          <td>Donat Hello Kitty</td>
+          <td>100</td>
+          <td>Donat Karakter</td>
+        </tr><tr>
+          <td>Donat Spiderman</td>
+          <td>100</td>
+          <td>Donat Karakter</td>
+        </tr><tr>
+          <td>Donat Panda</td>
+          <td>100</td>
+          <td>Donat Karakter</td>
+        </tr><tr>
+          <td>Donat Doraemon</td>
+          <td>100</td>
+          <td>Donat Karakter</td>
+        </tr>
+      </table>
+      <br>
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="copyright">
+            © 2019 <a href="">Donat Mini</a>
+        </div>
+        <div class="footer-menu">
+          <a href="#"><i class="fa fa-instagram"></i> DonatMiniStore</a>
+          <span>|</span>
+          <a href="#"><i class="fa fa-twitter"></i> Donat_Mini</a>
+          <span>|</span>
+          <a href="#"><i class="fa fa-whatsapp"></i> 087750231213</a>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
